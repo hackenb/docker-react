@@ -9,5 +9,5 @@ before_install:
     - docker build -t hackenb/docker-react -f Dockerfile.dev .
     
 script:
-    - docker run -e CI-true hackenb/docker-react npm run start
+    - docker run -e CI-true hackenb/docker-react npm run test
 
